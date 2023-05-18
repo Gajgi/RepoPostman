@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "f725d924-ecd5-402f-97ce-6dd7b22d1790",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27158881"
+	},
+	"item": [
+		{
+			"name": "Tworzenie nowej tablicy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Tablica z API 1&token=ATTAcea966f43cc5282098ae72720a483f41a62bd02046c4fcbfc00725459142fa432E6BB3F8&key=4f15d10ca895cac41eb3f8e9b293bd7d",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tablica z API 1"
+						},
+						{
+							"key": "token",
+							"value": "ATTAcea966f43cc5282098ae72720a483f41a62bd02046c4fcbfc00725459142fa432E6BB3F8"
+						},
+						{
+							"key": "key",
+							"value": "4f15d10ca895cac41eb3f8e9b293bd7d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy tablic",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowej listy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy dostpnych list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/{id}/lists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"{id}",
+						"lists"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
